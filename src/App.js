@@ -4,7 +4,7 @@ import React, { useContext } from "react";
 import { Web3Context } from "./web3";
 
 function App() {
-  const { account, connectWeb3, logout } = useContext<any>(Web3Context);
+  const { account, connectWeb3, logout } = useContext(Web3Context);
 
   return (
     <div className="App">
@@ -20,7 +20,7 @@ function App() {
             </div>
           )}
         </div>
-        <br />
+        <br/>
         <a
           className="App-link"
           href="https://ethereum.org/en/what-is-ethereum/"
