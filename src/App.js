@@ -67,7 +67,7 @@ function App() {
             </InputGroup>
           </Box>
 
-          <Button colorScheme="teal" size="md">Connect to a wallet</Button>
+          <Button mt={2} colorScheme="teal" size="sm">Connect to a wallet</Button>
         </Box>
       </Center>
     </VStack>
