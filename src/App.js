@@ -6,6 +6,7 @@ import { IconButton } from "@chakra-ui/button";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Flex, VStack, Heading, Spacer } from "@chakra-ui/layout";
 import { FaSun, FaMoon } from 'react-icons/fa';
+import { ArrowUpDownIcon, ArrowForwardIcon, CloseIcon } from "@chakra-ui/icons";
 import { 
   Box, 
   Button,
@@ -44,14 +45,12 @@ function App() {
       <Box mt={20} width="50%" p={5} bg="#161522" borderWidth="1px" borderRadius="md" overflow="hidden">
         <Button colorScheme="teal" size="md">Swap</Button>
         
-        <Center>
-          <Box mt={5} py={8} px={5} width="80%" bg="#202231" border="none" borderRadius="md">
-            <InputGroup size="md">
-              <InputLeftAddon p={3} children="simETH" />
-              <Input p={5} type="number" bg="#161522" border="none" placeholder="0.00" />
-            </InputGroup>
-          </Box>
-        </Center>
+        <Box mt={5} py={8} px={5} bg="#202231" border="none" borderRadius="md">
+          <InputGroup size="md">
+            <InputLeftAddon p={3} children="simETH" />
+            <Input p={5} type="number" bg="#161522" border="none" placeholder="0.00" />
+          </InputGroup>
+        </Box>
       </Box>
       </Center>
     </VStack>
