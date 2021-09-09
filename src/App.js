@@ -11,7 +11,9 @@ function App() {
 
   return (
     <VStack>
-      
+      <Flex>
+        <Heading></Heading>
+      </Flex>
     </VStack>
   );
 }
