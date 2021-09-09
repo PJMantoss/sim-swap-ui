@@ -13,9 +13,9 @@ function App() {
   const isDark = colorMode === "dark";
 
   return (
-    <VStack>
-      <Flex>
-        <Heading></Heading>
+    <VStack p={5}>
+      <Flex w="100%">
+        <Heading ml="8" size="md" fontWeight='semibold' color="cyan.400">swapUI</Heading>
       </Flex>
     </VStack>
   );
