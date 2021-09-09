@@ -9,6 +9,9 @@ import { Flex, VStack, Heading, Spacer } from "@chakra-ui/layout";
 function App() {
   const { account, connectWeb3, logout } = useContext(Web3Context);
 
+  const { colorMode, toggleColorMode } = useColorMode();
+  const isDark = colorMode === "dark";
+
   return (
     <VStack>
       <Flex>
