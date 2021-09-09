@@ -40,9 +40,16 @@ function App() {
 
       <Spacer></Spacer>
 
-      <Box>
-        <Heading>Swap</Heading>
-        <Box></Box>
+      <Box width="50%" p={5} bg="#161522" borderWidth="1px" borderRadius="md" overflow="hidden">
+        <Button colorScheme="teal" size="md">Swap</Button>
+        <Spacer></Spacer>
+        
+        <Box width="50%" p={3} bg="#202231" borderWidth="1px" borderRadius="md">
+          <InputGroup size="md">
+            <InputLeftAddon children="simETH" />
+            <Input type="number" placeholder="0.00" />
+          </InputGroup>
+        </Box>
       </Box>
     </VStack>
   );
