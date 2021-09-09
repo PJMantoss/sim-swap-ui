@@ -40,14 +40,13 @@ function App() {
 
       <Spacer></Spacer>
 
-      <Box width="50%" p={5} bg="#161522" borderWidth="1px" borderRadius="md" overflow="hidden">
+      <Box mt="20" width="50%" p={5} bg="#161522" borderWidth="1px" borderRadius="md" overflow="hidden">
         <Button colorScheme="teal" size="md">Swap</Button>
-        <Spacer></Spacer>
         
-        <Box width="50%" p={3} bg="#202231" borderWidth="1px" borderRadius="md">
+        <Box mt="5" width="80%" p={3} bg="#202231" border="none" borderRadius="md">
           <InputGroup size="md">
             <InputLeftAddon children="simETH" />
-            <Input type="number" placeholder="0.00" />
+            <Input type="number" bg="#161522" border="none" placeholder="0.00" />
           </InputGroup>
         </Box>
       </Box>
