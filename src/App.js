@@ -53,14 +53,21 @@ function App() {
           </Box>
 
           <Center>
-          <IconButton 
-              icon={<ArrowUpDownIcon />} 
-              bg="#202231" 
-              color="white" 
-              borderWidth="1px" 
-              borderRadius="sm" 
-          />
+            <IconButton 
+                icon={<ArrowUpDownIcon />} 
+                bg="#202231" 
+                color="white" 
+                borderWidth="1px" 
+                borderRadius="sm" 
+            />
           </Center>
+
+          <Box mt={5} py={8} px={5} bg="#202231" border="none" borderRadius="md">
+            <InputGroup size="md">
+              <InputLeftAddon p={3} children="simUSD" />
+              <Input p={5} type="number" bg="#161522" border="none" placeholder="0.00" />
+            </InputGroup>
+          </Box>
         </Box>
       </Center>
     </VStack>
