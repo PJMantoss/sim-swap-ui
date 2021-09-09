@@ -12,7 +12,11 @@ import {
   Image, 
   Input,
   InputGroup, 
-  InputLeftAddon 
+  InputLeftAddon,
+  NumberInput,
+  NumberInputField,
+  Link,
+  Center 
 } from "@chakra-ui/react";
 //https://www.dropbox.com/sh/3ykmghjcaordk7n/AAABIrQ6uulce6k7KENitQXRa?dl=0&preview=keko_logo_color.png
 
