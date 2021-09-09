@@ -19,6 +19,7 @@ function App() {
     <VStack p={3}>
       <Flex w="100%">
         <Heading ml="5" size="md" fontWeight='semibold' color="cyan.400">swapUI</Heading>
+        <IconButton ml={8} icon={isDark ? <FaSun /> : <FaMoon />} isRound='true' onClick={toggleColorMode}></IconButton>
       </Flex>
     </VStack>
   );
