@@ -13,13 +13,16 @@ function App() {
   const { account, connectWeb3, logout } = useContext(Web3Context);
 
   const { colorMode, toggleColorMode } = useColorMode();
-  const isDark = colorMode === "dark";
+  const isLight = colorMode === "light";
 
   return (
     <VStack p={3}>
       <Flex w="100%">
         <Heading ml="5" size="md" fontWeight='semibold' color="cyan.400">swapUI</Heading>
-        <IconButton ml={8} icon={isDark ? <FaSun /> : <FaMoon />} isRound='true' onClick={toggleColorMode}></IconButton>
+
+        <Spacer></Spacer>
+
+        <IconButton ml={8} icon={isLight ? <FaMoon /> : <FaSun />} isRound='true' onClick={toggleColorMode}></IconButton>
       </Flex>
     </VStack>
   );
