@@ -10,7 +10,7 @@ import { Web3Provider } from "./web3";
 ReactDOM.render(
   <React.StrictMode>
     <ChakraProvider>
-    <ColorModeScript initialColorMode="dark"></ColorModeScript>
+    <ColorModeScript initialColorMode="light"></ColorModeScript>
       <Web3Provider>
         <App />
       </Web3Provider>
