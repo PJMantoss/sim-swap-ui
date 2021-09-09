@@ -9,6 +9,7 @@ import { FaSun, FaMoon } from 'react-icons/fa';
 import { 
   Box, 
   Button, 
+  Center,
   Image, 
   Input,
   InputGroup, 
@@ -40,6 +41,7 @@ function App() {
 
       <Spacer></Spacer>
 
+      <Center>
       <Box mt="20" width="50%" p={5} bg="#161522" borderWidth="1px" borderRadius="md" overflow="hidden">
         <Button colorScheme="teal" size="md">Swap</Button>
         
@@ -50,6 +52,7 @@ function App() {
           </InputGroup>
         </Box>
       </Box>
+      </Center>
     </VStack>
   );
 }
