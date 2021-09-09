@@ -13,7 +13,7 @@ function App() {
   const isDark = colorMode === "dark";
 
   return (
-    <VStack p={5}>
+    <VStack p={3}>
       <Flex w="100%">
         <Heading ml="8" size="md" fontWeight='semibold' color="cyan.400">swapUI</Heading>
       </Flex>
