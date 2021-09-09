@@ -6,7 +6,7 @@ import { IconButton } from "@chakra-ui/button";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Flex, VStack, Heading, Spacer } from "@chakra-ui/layout";
 import { FaSun, FaMoon } from 'react-icons/fa';
-import { Image } from "@chakra-ui/react";
+import { Button, Image } from "@chakra-ui/react";
 //https://www.dropbox.com/sh/3ykmghjcaordk7n/AAABIrQ6uulce6k7KENitQXRa?dl=0&preview=keko_logo_color.png
 
 function App() {
@@ -21,6 +21,8 @@ function App() {
         <Heading ml="5" size="md" fontWeight='semibold' color="cyan.400">swapUI</Heading>
 
         <Spacer></Spacer>
+
+        <Button colorScheme="teal" size="md">Connect to a wallet</Button>
         
         <IconButton ml={8} icon={isDark ? <FaSun /> : <FaMoon />} isRound='true' onClick={toggleColorMode}></IconButton>
       </Flex>
