@@ -39,7 +39,14 @@ function App() {
           size="sm"
           variant="ghost"
         >
-          View Prices
+          ETH/USD Prices
+        </Button>
+        <Button
+          colorScheme="teal"
+          size="sm"
+          variant="ghost"
+        >
+          Price Graph
         </Button>
         <Button
           colorScheme="teal"
