@@ -27,18 +27,32 @@ function App() {
 
   return (
     <VStack p={3}>
-      <Flex w="100%">
+      <Flex 
+          w="100%"
+          justifyContent="center"
+          alignItems="center"
+      >
         <Heading ml="5" size="md" fontWeight='semibold' color="cyan.400">swapUI</Heading>
 
         <Spacer></Spacer>
 
-        <Flex>
-          <Link>View Prices</Link>
-          <Link>Get simUSD</Link>
-          <Link href="https://faucet.rinkeby.io/" isExternal>
-            Rinkeby <ExternalLinkIcon mx="2px" />
-          </Link>
-        </Flex>
+        <Button
+          colorScheme="teal"
+          size="sm"
+          variant="ghost"
+        >
+          View Prices
+        </Button>
+        <Button
+          colorScheme="teal"
+          size="sm"
+          variant="ghost"
+        >
+          Get SimUSD
+        </Button>
+        <Link href="https://faucet.rinkeby.io/" isExternal>
+          Rinkeby <ExternalLinkIcon mx="2px" />
+        </Link>
 
         <Button colorScheme="teal" size="md">Connect to a wallet</Button>
         
