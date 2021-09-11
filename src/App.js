@@ -32,11 +32,13 @@ function App() {
 
         <Spacer></Spacer>
 
-        <Link>View Prices</Link>
-        <Link>Get simUSD</Link>
-        <Link href="https://faucet.rinkeby.io/" isExternal>
-          Rinkeby <ExternalLinkIcon mx="2px" />
-        </Link>
+        <Flex>
+          <Link>View Prices</Link>
+          <Link>Get simUSD</Link>
+          <Link href="https://faucet.rinkeby.io/" isExternal>
+            Rinkeby <ExternalLinkIcon mx="2px" />
+          </Link>
+        </Flex>
 
         <Button colorScheme="teal" size="md">Connect to a wallet</Button>
         
