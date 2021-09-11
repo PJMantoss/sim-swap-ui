@@ -125,8 +125,10 @@ function App() {
 
             <Button mt={2} colorScheme="teal" size="sm">Connect to a wallet</Button>
           </Box>
-        </Flex>
-        <Accordion id="accordion" defaultIndex={[0]} allowMultiple>
+
+          <Spacer></Spacer>
+
+          <Accordion id="accordion" defaultIndex={[0]} allowMultiple>
             <AccordionItem>
               <h2>
                 <AccordionButton>
@@ -160,7 +162,8 @@ function App() {
                 commodo consequat.
               </AccordionPanel>
             </AccordionItem>
-        </Accordion>
+          </Accordion>
+        </Flex>
       </Center>
     </VStack>
   );
