@@ -69,6 +69,18 @@ function App() {
       <Spacer></Spacer>
 
       <Center width="100%">
+        <Box bg="#161522" size="sm" borderRadius="lg">
+          <Button colorScheme="#161522" size="sm">
+            ETH Balance
+          </Button>
+          <Button colorScheme="transparent" opacity="0.5" size="sm">
+            SimETH Balance
+          </Button>
+          <Button colorScheme="transparent" opacity="0.5" size="sm">
+            SimUSD Balance
+          </Button>
+        </Box>
+        <Spacer></Spacer>
         <Box mt={10} width="50%" p={5} bg="#161522" borderWidth="1px" borderRadius="md" overflow="hidden">
           <Button colorScheme="cyan" size="md">Swap</Button>
           
