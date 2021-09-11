@@ -128,7 +128,7 @@ function App() {
 
           <Spacer></Spacer>
 
-          <Accordion mt={5} width="70%" id="accordion" defaultIndex={[0]} allowMultiple>
+          <Accordion mt={5} width="70%" id="accordion" allowMultiple>
             <AccordionItem>
               <h2>
                 <AccordionButton>
