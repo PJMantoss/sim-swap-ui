@@ -15,7 +15,12 @@ import {
   InputGroup, 
   InputLeftAddon,
   Link,
-  Center 
+  Center,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
 } from "@chakra-ui/react";
 //https://www.dropbox.com/sh/3ykmghjcaordk7n/AAABIrQ6uulce6k7KENitQXRa?dl=0&preview=keko_logo_color.png
 
