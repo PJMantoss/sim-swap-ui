@@ -40,7 +40,7 @@ function App() {
         <Heading ml="5" size="md" fontWeight='semibold' color="cyan.400">swapUI</Heading>
 
         <Spacer></Spacer>
-        
+
         <Button
           colorScheme="teal"
           size="sm"
@@ -52,9 +52,9 @@ function App() {
           Rinkeby <ExternalLinkIcon mx="2px" />
         </Link>
 
-        <Button colorScheme="teal" size="sm">Connect to a wallet</Button>
+        <Button ml={4} colorScheme="teal" size="sm">Connect to a wallet</Button>
         
-        <IconButton ml={8} icon={isDark ? <FaSun /> : <FaMoon />} isRound='true' onClick={toggleColorMode}></IconButton>
+        <IconButton ml={6} icon={isDark ? <FaSun /> : <FaMoon />} isRound='true' onClick={toggleColorMode}></IconButton>
       </Flex>
 
       <Spacer></Spacer>
