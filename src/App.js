@@ -39,24 +39,8 @@ function App() {
       >
         <Heading ml="5" size="md" fontWeight='semibold' color="cyan.400">swapUI</Heading>
 
-        <Link href="#accordion">
-          <Button
-            colorScheme="teal"
-            size="sm"
-            variant="ghost"
-          >
-            ETH/USD Prices
-          </Button>
-        </Link>
-
-        <Link href="#accordion"></Link>
-        <Button
-          colorScheme="teal"
-          size="sm"
-          variant="ghost"
-        >
-          Price Graph
-        </Button>
+        <Spacer></Spacer>
+        
         <Button
           colorScheme="teal"
           size="sm"
@@ -67,8 +51,6 @@ function App() {
         <Link href="https://faucet.rinkeby.io/" isExternal>
           Rinkeby <ExternalLinkIcon mx="2px" />
         </Link>
-
-        <Spacer></Spacer>
 
         <Button colorScheme="teal" size="sm">Connect to a wallet</Button>
         
