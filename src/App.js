@@ -70,7 +70,7 @@ function App() {
 
       <Center width="100%">
         <Flex 
-          flexDirection="row"
+          flexDirection="column"
           justifyContent="center"
           alignItems="center"
         >
