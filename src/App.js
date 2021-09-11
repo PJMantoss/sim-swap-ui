@@ -39,15 +39,14 @@ function App() {
       >
         <Heading ml="5" size="md" fontWeight='semibold' color="cyan.400">swapUI</Heading>
 
-        <Link href="#accordion" textDecoration="none">
           <Button
             colorScheme="teal"
             size="sm"
-            variant="ghost"
+            variant="link"
+            href="#accordion"
           >
             ETH/USD Prices
           </Button>
-        </Link>
 
         <Link href="#accordion"></Link>
         <Button
