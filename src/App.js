@@ -82,7 +82,7 @@ function App() {
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
-          width="50%"
+          width="100%"
         >
           <Box size="sm" borderRadius="lg">
             <Button size="sm">
@@ -98,7 +98,7 @@ function App() {
 
           <Spacer></Spacer>
 
-          <Box mt={10} width="100%" p={5} bg="#161522" borderWidth="1px" borderRadius="md" overflow="hidden">
+          <Box mt={10} width="50%" p={5} bg="#161522" borderWidth="1px" borderRadius="md" overflow="hidden">
             <Button colorScheme="cyan" size="md">Swap</Button>
             
             <Box mt={5} py={8} px={5} bg="#202231" border="none" borderRadius="md">
@@ -128,7 +128,7 @@ function App() {
 
           <Spacer></Spacer>
 
-          <Accordion id="accordion" defaultIndex={[0]} allowMultiple>
+          <Accordion mt={5} width="70%" id="accordion" defaultIndex={[0]} allowMultiple>
             <AccordionItem>
               <h2>
                 <AccordionButton>
