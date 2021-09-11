@@ -39,7 +39,7 @@ function App() {
       >
         <Heading ml="5" size="md" fontWeight='semibold' color="cyan.400">swapUI</Heading>
 
-        <Link href="#accordion" textDecoration="none">
+        <Link href="#accordion">
           <Button
             colorScheme="teal"
             size="sm"
