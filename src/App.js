@@ -74,21 +74,21 @@ function App() {
           justifyContent="center"
           alignItems="center"
         >
-          <Box bg="#161522" size="sm" borderRadius="lg">
-            <Button colorScheme="#161522" size="sm">
+          <Box size="sm" borderRadius="lg">
+            <Button size="sm">
               ETH Balance
             </Button>
-            <Button colorScheme="transparent" opacity="0.5" size="sm">
+            <Button opacity="0.5" size="sm">
               SimETH Balance
             </Button>
-            <Button colorScheme="transparent" opacity="0.5" size="sm">
+            <Button opacity="0.5" size="sm">
               SimUSD Balance
             </Button>
           </Box>
 
           <Spacer></Spacer>
 
-          <Box mt={10} width="50%" p={5} bg="#161522" borderWidth="1px" borderRadius="md" overflow="hidden">
+          <Box mt={10} width="100%" p={5} bg="#161522" borderWidth="1px" borderRadius="md" overflow="hidden">
             <Button colorScheme="cyan" size="md">Swap</Button>
             
             <Box mt={5} py={8} px={5} bg="#202231" border="none" borderRadius="md">
