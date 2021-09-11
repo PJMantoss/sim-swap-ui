@@ -6,7 +6,7 @@ import { IconButton } from "@chakra-ui/button";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Flex, VStack, Heading, Spacer } from "@chakra-ui/layout";
 import { FaSun, FaMoon } from 'react-icons/fa';
-import { ArrowUpDownIcon, ArrowForwardIcon, CloseIcon } from "@chakra-ui/icons";
+import { ArrowUpDownIcon, ExternalLinkIcon } from "@chakra-ui/icons";
 import { 
   Box, 
   Button,
@@ -31,6 +31,12 @@ function App() {
         <Heading ml="5" size="md" fontWeight='semibold' color="cyan.400">swapUI</Heading>
 
         <Spacer></Spacer>
+
+        <Link>View Prices</Link>
+        <Link>Get simUSD</Link>
+        <Link href="https://faucet.rinkeby.io/" isExternal>
+          Rinkeby <ExternalLinkIcon mx="2px" />
+        </Link>
 
         <Button colorScheme="teal" size="md">Connect to a wallet</Button>
         
