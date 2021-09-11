@@ -69,6 +69,11 @@ function App() {
       <Spacer></Spacer>
 
       <Center width="100%">
+        <Flex 
+          flexDirection="row"
+          justifyContent="center"
+          alignItems="center"
+        >
         <Box bg="#161522" size="sm" borderRadius="lg">
           <Button colorScheme="#161522" size="sm">
             ETH Balance
@@ -80,7 +85,9 @@ function App() {
             SimUSD Balance
           </Button>
         </Box>
+
         <Spacer></Spacer>
+
         <Box mt={10} width="50%" p={5} bg="#161522" borderWidth="1px" borderRadius="md" overflow="hidden">
           <Button colorScheme="cyan" size="md">Swap</Button>
           
@@ -108,6 +115,7 @@ function App() {
 
           <Button mt={2} colorScheme="teal" size="sm">Connect to a wallet</Button>
         </Box>
+        </Flex>
       </Center>
     </VStack>
   );
