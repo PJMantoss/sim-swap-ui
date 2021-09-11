@@ -14,8 +14,8 @@ import {
   Input,
   InputGroup, 
   InputLeftAddon,
-  NumberInput,
-  NumberInputField,
+  Menu,
+  MenuButton,
   Link,
   Center 
 } from "@chakra-ui/react";
