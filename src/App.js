@@ -73,7 +73,7 @@ function App() {
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
-          width="100%"
+          width="50%"
         >
           <Box size="sm" borderRadius="lg">
             <Button size="sm">
