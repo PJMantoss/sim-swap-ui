@@ -11,23 +11,13 @@ import {
   } from "@chakra-ui/react"
 
 
-const Prices = props => {
+const Prices = async () => {
 
-    const getCoins = async () => {
         const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false";
 
-        try{
-            const coinsPromise = await fetch(url);
-            const coins = await coinsPromise.json();
-            console.log(coins);
-        }catch(err){
-            console.error(err);
-        }
-    }
-
-    useEffect(() => {
-        getCoins();
-    }, []);
+        const coinsPromise = await fetch(url);
+        const coins = await coinsPromise.json();
+        console.log(coins);
 
     return (
         <Table variant="striped" colorScheme="teal">
@@ -41,9 +31,9 @@ const Prices = props => {
                 </Tr>
             </Thead>
             <Tbody>
-                {coins.map(coin => (
-                    <Tr key={coin.id}>
-                        <Td></Td>
+                {coins.map((coin, id) => (
+                    <Tr key={id}>
+                        <Td>{coin.symbol.toUpperCase()}</Td>
                         <Td></Td>
                         <Td></Td>
                         <Td></Td>
