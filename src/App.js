@@ -1,4 +1,4 @@
-import logo from "./logo.png";
+import Prices from './components/Prices';
 import "./App.css";
 import React, { useContext } from "react";
 import { Web3Context } from "./web3";
@@ -121,7 +121,7 @@ function App() {
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                <Prices />
               </AccordionPanel>
             </AccordionItem>
 
