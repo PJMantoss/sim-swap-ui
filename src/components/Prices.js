@@ -11,7 +11,7 @@ import {
   } from "@chakra-ui/react"
 
 
-const Prices = async () => {
+const Prices = async (props) => {
 
         const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false";
 
@@ -31,8 +31,8 @@ const Prices = async () => {
                 </Tr>
             </Thead>
             <Tbody>
-                {coins.map((coin, id) => (
-                    <Tr key={id}>
+                {coins.map((coin) => (
+                    <Tr key={coin.id}>
                         <Td>{coin.symbol.toUpperCase()}</Td>
                         <Td></Td>
                         <Td></Td>
