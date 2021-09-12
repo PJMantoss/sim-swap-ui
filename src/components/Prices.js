@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
     Table,
     Thead,
@@ -19,10 +19,15 @@ const Prices = props => {
         try{
             const coinsPromise = await fetch(url);
             const coins = await coinsPromise.json();
+            console.log(coins);
         }catch(err){
             console.error(err);
         }
     }
+
+    useEffect(() => {
+        getCoins();
+    }, []);
 
     return (
         <Table variant="striped" colorScheme="teal">
