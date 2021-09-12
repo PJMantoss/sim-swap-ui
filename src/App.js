@@ -1,5 +1,3 @@
-import Prices from './components/Prices';
-import "./App.css";
 import React, { useContext } from "react";
 import { Web3Context } from "./web3";
 import { IconButton } from "@chakra-ui/button";
@@ -22,7 +20,8 @@ import {
   AccordionPanel,
   AccordionIcon,
 } from "@chakra-ui/react";
-//https://www.dropbox.com/sh/3ykmghjcaordk7n/AAABIrQ6uulce6k7KENitQXRa?dl=0&preview=keko_logo_color.png
+import Prices from './components/Prices';
+import "./App.css";
 
 function App() {
   const { account, connectWeb3, logout } = useContext(Web3Context);

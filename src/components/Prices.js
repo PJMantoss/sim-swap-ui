@@ -3,6 +3,18 @@ import CoinGecko from 'coingecko-api'
 
 const coinGeckoClient = new CoinGecko();
 
+export async function getServerSideProps(context){
+    const params = {
+      order: CoinGecko.ORDER.MARKET_CAP_DESC
+    };
+    const result = await coinGeckoClient.coins.markets({params});
+    return {
+      props: {
+        result
+      }
+    };
+  }
+
 
 const Prices = props => {
     const { data } = props.result;
