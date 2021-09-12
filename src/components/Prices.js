@@ -41,12 +41,14 @@ const Prices = props => {
                 </Tr>
             </Thead>
             <Tbody>
-                <Tr>
-                    <Td></Td>
-                    <Td></Td>
-                    <Td></Td>
-                    <Td></Td>
-                </Tr>
+                {coins.map(coin => (
+                    <Tr key={coin.id}>
+                        <Td></Td>
+                        <Td></Td>
+                        <Td></Td>
+                        <Td></Td>
+                    </Tr>
+                ))}
             </Tbody>
             <Tfoot>
                 <Tr>
