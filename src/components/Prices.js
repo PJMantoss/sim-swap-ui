@@ -15,29 +15,21 @@ const Prices = props => {
 
     return (
         <Table variant="striped" colorScheme="teal">
-            <TableCaption>Imperial to metric conversion factors</TableCaption>
+            <TableCaption>Prices</TableCaption>
             <Thead>
                 <Tr>
-                <Th>To convert</Th>
-                <Th>into</Th>
-                <Th isNumeric>multiply by</Th>
+                    <Th>Symbol</Th>
+                    <Th>24Hour Change</Th>
+                    <Th>Price</Th>
+                    <Th>Market Cap</Th>
                 </Tr>
             </Thead>
             <Tbody>
                 <Tr>
-                <Td>inches</Td>
-                <Td>millimetres (mm)</Td>
-                <Td isNumeric>25.4</Td>
-                </Tr>
-                <Tr>
-                <Td>feet</Td>
-                <Td>centimetres (cm)</Td>
-                <Td isNumeric>30.48</Td>
-                </Tr>
-                <Tr>
-                <Td>yards</Td>
-                <Td>metres (m)</Td>
-                <Td isNumeric>0.91444</Td>
+                    <Td></Td>
+                    <Td></Td>
+                    <Td></Td>
+                    <Td></Td>
                 </Tr>
             </Tbody>
             <Tfoot>
