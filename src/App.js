@@ -38,6 +38,7 @@ function App() {
           w="100%"
           justifyContent="center"
           alignItems="center"
+          direction={isNotSmallerScreen ? "row" : "column"}
       >
         <Heading ml="5" size="md" fontWeight='semibold' color="cyan.400">swapUI</Heading>
 
@@ -68,7 +69,7 @@ function App() {
           alignItems="center"
           width="100%"
         >
-          <Box size="sm" borderRadius="lg">
+          <Box size="sm" borderRadius="lg" display={isNotSmallerScreen ? "inline" : "block"}>
             <Button size="sm">
               ETH Balance
             </Button>
@@ -82,7 +83,7 @@ function App() {
 
           <Spacer></Spacer>
 
-          <Box mt={10} width="50%" p={5} bg="#161522" borderWidth="1px" borderRadius="md" overflow="hidden">
+          <Box mt={10} width={isNotSmallerScreen ? "50%" : "95%"} p={5} bg="#161522" borderWidth="1px" borderRadius="md" overflow="hidden">
             <Button colorScheme="cyan" size="md">Swap</Button>
             
             <Box mt={5} py={8} px={5} bg="#202231" border="none" borderRadius="md">
