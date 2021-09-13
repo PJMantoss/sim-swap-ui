@@ -8,22 +8,20 @@ import {
     Th,
     Td,
     TableCaption,
+    Image
   } from "@chakra-ui/react"
 
 
-const Prices = async () => {
+const Prices = () => {
     const [coins, setCoins] = useState([]);
     
     const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false";
 
     useEffect(() => {
-        try{
-            const coinsPromise = await fetch(url);
-            const data = await coinsPromise.json();
-            setCoins(data);
-        }catch(err){
-            console.error(err)
-        }
+        fetch(url)
+           .then(res => res.json())
+           .then(data => setCoins(data))
+           .catch(err => console.error(err));
     }, [])
     
     //console.log(data);
@@ -49,13 +47,6 @@ const Prices = async () => {
                     </Tr>
                 ))}
             </Tbody>
-            <Tfoot>
-                <Tr>
-                <Th>To convert</Th>
-                <Th>into</Th>
-                <Th isNumeric>multiply by</Th>
-                </Tr>
-            </Tfoot>
         </Table>
     );
 };
