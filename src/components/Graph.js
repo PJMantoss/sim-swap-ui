@@ -1,7 +1,7 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 
-const Dashboard = ({ price, data }) => {
+const Graph = ({ price, data }) => {
     const opts = {
         tooltips: {
             intersect: false,
@@ -16,7 +16,7 @@ const Dashboard = ({ price, data }) => {
     }
 
     return(
-        <div className="dashboard">
+        <div className="graph">
             <h2>{`$${price}`}</h2>
 
             <div className="chart-container">
@@ -26,4 +26,4 @@ const Dashboard = ({ price, data }) => {
     )
 };
 
-export default Dashboard;
+export default Graph;
