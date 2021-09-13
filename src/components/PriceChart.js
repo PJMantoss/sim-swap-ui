@@ -110,7 +110,7 @@ const PriceChart = props => {
     return (
         <div>
             {
-                <Select name="currency" value={pair} onChange={handleSelect} placeholder="Select a pair">
+                <Select name="currency" value={pair} onChange={handleSelect} variant="filled" placeholder="Select a pair">
                 {currencies.map((cur, idx) => {
                     return(
                     <option key={idx} value={cur.id}>
