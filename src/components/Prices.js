@@ -12,12 +12,21 @@ import {
 
 
 const Prices = async () => {
+    const [coins, setCoins] = useState([]);
     
     const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false";
 
-    const coinsPromise = await fetch(url);
-    const data = await coinsPromise.json();
-    console.log(data);
+    useEffect(() => {
+        try{
+            const coinsPromise = await fetch(url);
+            const data = await coinsPromise.json();
+            setCoins(data);
+        }catch(err){
+            console.error(err)
+        }
+    }, [])
+    
+    //console.log(data);
 
     return (
         <Table variant="striped" colorScheme="teal">
@@ -31,8 +40,8 @@ const Prices = async () => {
                 </Tr>
             </Thead>
             <Tbody>
-                {data.map((coin, idx) => (
-                    <Tr key={idx}>
+                {coins.map(coin => (
+                    <Tr key={coin.id}>
                         <Td>{coin.symbol.toUpperCase()}</Td>
                         <Td></Td>
                         <Td></Td>
