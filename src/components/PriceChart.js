@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Graph from './Graph';
 import { formatData } from '../formatter';
+import { Select } from "@chakra-ui/react"
 
 const PriceChart = props => {
     const [currencies, setCurrencies] = useState([]);
@@ -109,7 +110,7 @@ const PriceChart = props => {
     return (
         <div>
             {
-                <select name="currency" value={pair} onChange={handleSelect}>
+                <Select name="currency" value={pair} onChange={handleSelect} placeholder="Select a pair">
                 {currencies.map((cur, idx) => {
                     return(
                     <option key={idx} value={cur.id}>
@@ -117,7 +118,7 @@ const PriceChart = props => {
                     </option>
                     )
                 })}
-                </select>
+                </Select>
             }
 
             <Graph data={pastData} price={price} />
