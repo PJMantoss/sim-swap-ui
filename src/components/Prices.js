@@ -9,7 +9,9 @@ import {
     Td,
     TableCaption,
     Image
-  } from "@chakra-ui/react"
+  } from "@chakra-ui/react";
+
+  import './Prices.css'
 
 
 const Prices = () => {
@@ -20,11 +22,18 @@ const Prices = () => {
     useEffect(() => {
         fetch(url)
            .then(res => res.json())
-           .then(data => setCoins(data))
+           .then(data => setCoins(data)) //console.log(data);
            .catch(err => console.error(err));
-    }, [])
-    
-    //console.log(data);
+    }, []);
+
+    const formatPercent = num => `${new Number(num).toFixed(2)}%`;
+
+  const formatDollar = (number, maximumSignificantDigits) => 
+      new Intl.NumberFormat('en-Us', {
+        style: 'currency',
+        currency: 'usd',
+        maximumSignificantDigits
+      }).format(number);
 
     return (
         <Table variant="striped" colorScheme="teal">
@@ -43,7 +52,15 @@ const Prices = () => {
                     <Tr key={coin.id}>
                         <Td>{coin.symbol.toUpperCase()}</Td>
                         <Td><Image  src={coin.image} style={{width: 25, height: 25, marginRight: 10}}/></Td>
-                        <Td></Td>
+                        <Td>
+                            <span
+                                className={coin.price_change_percentage_24h > 0 ? (
+                                    'text-sucess'
+                                    ) : 'text-danger'}
+                                >
+                                {formatPercent(coin.price_change_percentage_24h)}
+                            </span>
+                        </Td>
                         <Td></Td>
                         <Td></Td>
                     </Tr>
