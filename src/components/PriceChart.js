@@ -8,6 +8,9 @@ const PriceChart = props => {
     const [pastData, setPastData] = useState({});
     const ws = useRef(null);
 
+    let first = useRef(false);
+    const url = "https://api.pro.coinbase.com";
+
     return (
         <div>
             
