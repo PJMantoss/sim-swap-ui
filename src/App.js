@@ -22,6 +22,7 @@ import {
   AccordionIcon,
 } from "@chakra-ui/react";
 import Prices from './components/Prices';
+import PriceChart from "./components/PriceChart";
 import "./App.css";
 
 function App() {
@@ -136,7 +137,7 @@ function App() {
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                <PriceChart />
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
