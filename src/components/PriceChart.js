@@ -94,7 +94,19 @@ const PriceChart = props => {
 
     return (
         <div>
-            
+            {
+                <select name="currency" value={pair} onChange={handleSelect}>
+                {currencies.map((cur, idx) => {
+                    return(
+                    <option key={idx} value={cur.id}>
+                        {cur.display_name}
+                    </option>
+                    )
+                })}
+                </select>
+            }
+
+            <Graph />
         </div>
     );
 };
