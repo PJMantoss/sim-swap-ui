@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Graph from './Graph';
+import { formatData } from '../formatter';
 
 const PriceChart = props => {
     const [currencies, setCurrencies] = useState([]);
@@ -90,7 +91,20 @@ const PriceChart = props => {
         };
     
       }, [pair]);
+
+      const handleSelect = e => {
+        let unSubMsg = {
+          type: "unsubscribe",
+          product_ids: [pair],
+          channels: ["ticker"]
+        }
     
+        let unSub = JSON.stringify(unSubMsg);
+    
+        ws.current.send(unSub);
+    
+        setPair(e.target.value);
+      }
 
     return (
         <div>
@@ -106,7 +120,7 @@ const PriceChart = props => {
                 </select>
             }
 
-            <Graph />
+            <Graph data={pastData} price={price} />
         </div>
     );
 };
