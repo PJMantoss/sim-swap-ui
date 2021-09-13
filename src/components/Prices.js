@@ -61,8 +61,8 @@ const Prices = () => {
                                 {formatPercent(coin.price_change_percentage_24h)}
                             </span>
                         </Td>
-                        <Td></Td>
-                        <Td></Td>
+                        <Td>{formatDollar(coin.current_price, 20)}</Td>
+                        <Td>{formatDollar(coin.market_cap, 12)}</Td>
                     </Tr>
                 ))}
             </Tbody>
