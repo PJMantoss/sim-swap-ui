@@ -55,7 +55,7 @@ const Prices = () => {
                         <Td>
                             <span
                                 className={coin.price_change_percentage_24h > 0 ? (
-                                    'text-sucess'
+                                    'text-success'
                                     ) : 'text-danger'}
                                 >
                                 {formatPercent(coin.price_change_percentage_24h)}
