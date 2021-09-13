@@ -5,6 +5,7 @@ import { useColorMode } from "@chakra-ui/color-mode";
 import { Flex, VStack, Heading, Spacer } from "@chakra-ui/layout";
 import { FaSun, FaMoon } from 'react-icons/fa';
 import { ArrowUpDownIcon, ExternalLinkIcon } from "@chakra-ui/icons";
+import { useMediaQuery } from '@chakra-ui/media-query';
 import { 
   Box, 
   Button,
@@ -28,6 +29,7 @@ function App() {
 
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
   return (
     <VStack p={3}>
@@ -109,7 +111,7 @@ function App() {
 
           <Spacer></Spacer>
 
-          <Accordion mt={5} width="70%" id="accordion" allowMultiple>
+          <Accordion mt={5} width="70%">
             <AccordionItem>
               <h2>
                 <AccordionButton>
