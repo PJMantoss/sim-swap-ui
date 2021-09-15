@@ -110,7 +110,14 @@ function App() {
           >
             <Button colorScheme="cyan" size={isNotSmallerScreen ? "md" : "sm"}>Swap</Button>
             
-            <Box mt={5} py={8} px={5} bg="#202231" border="none" borderRadius="md">
+            <Box 
+                mt={5} 
+                py={isNotSmallerScreen ? "8" : "4"} 
+                px={isNotSmallerScreen ? "5" : "2.5"} 
+                bg="#202231" 
+                border="none" 
+                borderRadius="md"
+            >
               <InputGroup size="md">
                 <InputLeftAddon p={3} children="simETH" />
                 <Input p={5} type="number" bg="#161522" color="white" border="none" placeholder="0.00" />
