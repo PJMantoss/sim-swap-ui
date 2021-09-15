@@ -55,7 +55,12 @@ function App() {
           Rinkeby <ExternalLinkIcon mx="2px" />
         </Link>
 
-        <Button ml={4} colorScheme="teal" size="sm">Connect to a wallet</Button>
+        <Button 
+            ml={isNotSmallerScreen ? "4" : "0"} 
+            colorScheme="teal" size="sm"
+        >
+          Connect to a wallet
+        </Button>
         
         <IconButton 
             ml={6} 
