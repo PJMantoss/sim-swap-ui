@@ -81,10 +81,9 @@ function App() {
           alignItems="center"
           width="100%"
         >
-          <Box 
+          <Flex 
               size={isNotSmallerScreen ? "md" : "sm"}
-              borderRadius="lg" 
-              d="flex"
+              borderRadius="lg"
               flexDirection={isNotSmallerScreen ? "row" : "column"}
           >
             <Button size={isNotSmallerScreen ? "md" : "sm"}>
@@ -96,11 +95,11 @@ function App() {
             <Button opacity="0.5" size={isNotSmallerScreen ? "md" : "sm"}>
               SimUSD Balance
             </Button>
-          </Box>
+          </Flex>
 
           <Spacer></Spacer>
 
-          <Box mt={10} width={isNotSmallerScreen ? "50%" : "97%"} p={5} bg="#161522" borderWidth="1px" borderRadius="md" overflow="hidden">
+          <Box mt={10} width={isNotSmallerScreen ? "60%" : "98%"} p={5} bg="#161522" borderWidth="1px" borderRadius="md" overflow="hidden">
             <Button colorScheme="cyan" size="md">Swap</Button>
             
             <Box mt={5} py={8} px={5} bg="#202231" border="none" borderRadius="md">
