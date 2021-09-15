@@ -57,14 +57,15 @@ function App() {
 
         <Button 
             ml={isNotSmallerScreen ? "4" : "0"}
-            mt={isNotSmallerScreen ? "0" : "3"} 
-            colorScheme="teal" size="sm"
+            my={isNotSmallerScreen ? "0" : "2"} 
+            colorScheme="teal" 
+            size={isNotSmallerScreen ? "md" : "sm"}
         >
           Connect to a wallet
         </Button>
         
         <IconButton 
-            ml={6} 
+            ml={isNotSmallerScreen ? "6" : "0"} 
             icon={isDark ? <FaSun /> : <FaMoon />}
             isRound='true' 
             onClick={toggleColorMode}
