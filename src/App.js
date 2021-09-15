@@ -108,7 +108,7 @@ function App() {
               borderRadius="md" 
               overflow="hidden"
           >
-            <Button colorScheme="cyan" size="md">Swap</Button>
+            <Button colorScheme="cyan" size={isNotSmallerScreen ? "md" : "sm"}>Swap</Button>
             
             <Box mt={5} py={8} px={5} bg="#202231" border="none" borderRadius="md">
               <InputGroup size="md">
@@ -125,7 +125,13 @@ function App() {
               />
             </Center>
 
-            <Box py={8} px={5} bg="#202231" border="none" borderRadius="md">
+            <Box 
+                py={isNotSmallerScreen ? "8" : "4"} 
+                px={isNotSmallerScreen ? "5" : "2.5"} 
+                bg="#202231" 
+                border="none" 
+                borderRadius="md"
+            >
               <InputGroup size="md">
                 <InputLeftAddon p={3} children="simUSD" />
                 <Input p={5} type="number" bg="#161522" color="white" border="none" placeholder="0.00" />
