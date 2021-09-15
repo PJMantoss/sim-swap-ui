@@ -120,7 +120,14 @@ function App() {
             >
               <InputGroup size="md">
                 <InputLeftAddon p={3} children="simETH" />
-                <Input p={5} type="number" bg="#161522" color="white" border="none" placeholder="0.00" />
+                <Input 
+                    p={5} 
+                    type="number" 
+                    bg="#161522" 
+                    color="white" 
+                    border="none" 
+                    placeholder="0.00" 
+                />
               </InputGroup>
             </Box>
 
@@ -156,7 +163,10 @@ function App() {
 
           <Spacer></Spacer>
 
-          <Accordion mt={5} width="70%">
+          <Accordion 
+              mt={5} 
+              width="70%"
+          >
             <AccordionItem>
               <h2>
                 <AccordionButton>
