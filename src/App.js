@@ -119,7 +119,7 @@ function App() {
                 borderRadius="md"
             >
               <InputGroup size={isNotSmallerScreen ? "md" : "sm"}>
-                <InputLeftAddon p={3} children="simETH" />
+                <InputLeftAddon p={isNotSmallerScreen ? "3" : "2"} children="simETH" />
                 <Input 
                     p={isNotSmallerScreen ? "5" : "2"} 
                     type="number" 
@@ -146,7 +146,7 @@ function App() {
                 border="none" 
                 borderRadius="md"
             >
-              <InputGroup size="md">
+              <InputGroup size={isNotSmallerScreen ? "md" : "sm"}>
                 <InputLeftAddon p={3} children="simUSD" />
                 <Input p={5} type="number" bg="#161522" color="white" border="none" placeholder="0.00" />
               </InputGroup>
