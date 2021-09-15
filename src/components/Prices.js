@@ -11,6 +11,7 @@ import {
     Image,
     Box
   } from "@chakra-ui/react";
+  import { useMediaQuery } from "@chakra-ui/react";
 
   import './Prices.css'
 

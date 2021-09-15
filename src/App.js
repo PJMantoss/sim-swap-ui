@@ -5,7 +5,7 @@ import { useColorMode } from "@chakra-ui/color-mode";
 import { Flex, VStack, Heading, Spacer } from "@chakra-ui/layout";
 import { FaSun, FaMoon } from 'react-icons/fa';
 import { ArrowUpDownIcon, ExternalLinkIcon } from "@chakra-ui/icons";
-import { useMediaQuery } from "@chakra-ui/react"
+import { useMediaQuery } from "@chakra-ui/react";
 import { 
   Box, 
   Button,
