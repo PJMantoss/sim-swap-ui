@@ -8,7 +8,8 @@ import {
     Th,
     Td,
     TableCaption,
-    Image
+    Image,
+    Box
   } from "@chakra-ui/react";
 
   import './Prices.css'
@@ -36,6 +37,7 @@ const Prices = () => {
       }).format(number);
 
     return (
+        <Box overflowX="scroll">
         <Table variant="striped" colorScheme="teal">
             <TableCaption>Prices</TableCaption>
             <Thead>
@@ -67,6 +69,7 @@ const Prices = () => {
                 ))}
             </Tbody>
         </Table>
+        </Box>
     );
 };
 
