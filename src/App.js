@@ -29,7 +29,7 @@ function App() {
   const { account, connectWeb3, logout } = useContext(Web3Context);
 
   const { colorMode, toggleColorMode } = useColorMode();
-  const isLight = colorMode === "light";
+  const isDark = colorMode === "dark";
   const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
   return (
@@ -57,7 +57,12 @@ function App() {
 
         <Button ml={4} colorScheme="teal" size="sm">Connect to a wallet</Button>
         
-        <IconButton ml={6} icon={isLight ? <FaMoon /> : <FaSun />} isRound='true' onClick={toggleColorMode}></IconButton>
+        <IconButton 
+            ml={6} 
+            icon={isDark ? <FaSun /> : <FaMoon />}
+            isRound='true' 
+            onClick={toggleColorMode}
+        ></IconButton>
       </Flex>
 
       <Spacer></Spacer>
@@ -83,7 +88,7 @@ function App() {
 
           <Spacer></Spacer>
 
-          <Box mt={10} width={isNotSmallerScreen ? "50%" : "95%"} p={5} bg="#161522" borderWidth="1px" borderRadius="md" overflow="hidden">
+          <Box mt={10} width={isNotSmallerScreen ? "50%" : "97%"} p={5} bg="#161522" borderWidth="1px" borderRadius="md" overflow="hidden">
             <Button colorScheme="cyan" size="md">Swap</Button>
             
             <Box mt={5} py={8} px={5} bg="#202231" border="none" borderRadius="md">
