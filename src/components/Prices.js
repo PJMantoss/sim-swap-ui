@@ -37,6 +37,8 @@ const Prices = () => {
         maximumSignificantDigits
       }).format(number);
 
+      const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
+
     return (
         <Box overflowX="scroll">
         <Table variant="striped" colorScheme="teal">
