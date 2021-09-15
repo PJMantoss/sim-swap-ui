@@ -147,8 +147,15 @@ function App() {
                 borderRadius="md"
             >
               <InputGroup size={isNotSmallerScreen ? "md" : "sm"}>
-                <InputLeftAddon p={3} children="simUSD" />
-                <Input p={5} type="number" bg="#161522" color="white" border="none" placeholder="0.00" />
+                <InputLeftAddon p={isNotSmallerScreen ? "3" : "2"} children="simUSD" />
+                <Input
+                    p={isNotSmallerScreen ? "5" : "2"} 
+                    type="number" 
+                    bg="#161522" 
+                    color="white" 
+                    border="none" 
+                    placeholder="0.00"
+                />
               </InputGroup>
             </Box>
 
