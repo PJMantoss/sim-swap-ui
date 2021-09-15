@@ -40,7 +40,7 @@ function App() {
           alignItems="center"
           direction={isNotSmallerScreen ? "row" : "column"}
       >
-        <Heading ml="5" size="md" fontWeight='semibold' color="cyan.400">swapUI</Heading>
+        <Heading ml={isNotSmallerScreen ? "5" : "0"} size="md" fontWeight='semibold' color="cyan.400">swapUI</Heading>
 
         <Spacer></Spacer>
 
