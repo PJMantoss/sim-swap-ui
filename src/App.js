@@ -81,14 +81,19 @@ function App() {
           alignItems="center"
           width="100%"
         >
-          <Box size="sm" borderRadius="lg" display={isNotSmallerScreen ? "inline" : "block"}>
-            <Button size="sm">
+          <Box 
+              size={isNotSmallerScreen ? "md" : "sm"}
+              borderRadius="lg" 
+              d="flex"
+              flexDirection={isNotSmallerScreen ? "row" : "column"}
+          >
+            <Button size={isNotSmallerScreen ? "md" : "sm"}>
               ETH Balance
             </Button>
-            <Button opacity="0.5" size="sm">
+            <Button opacity="0.5" size={isNotSmallerScreen ? "md" : "sm"}>
               SimETH Balance
             </Button>
-            <Button opacity="0.5" size="sm">
+            <Button opacity="0.5" size={isNotSmallerScreen ? "md" : "sm"}>
               SimUSD Balance
             </Button>
           </Box>
