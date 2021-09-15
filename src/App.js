@@ -145,7 +145,13 @@ function App() {
               </InputGroup>
             </Box>
 
-            <Button mt={2} colorScheme="teal" size="sm">Connect to a wallet</Button>
+            <Button 
+                mt={2} 
+                colorScheme="teal" 
+                size={isNotSmallerScreen ? "md" : "sm"}
+            >
+              Connect to a wallet
+            </Button>
           </Box>
 
           <Spacer></Spacer>
