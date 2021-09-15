@@ -29,7 +29,7 @@ function App() {
   const { account, connectWeb3, logout } = useContext(Web3Context);
 
   const { colorMode, toggleColorMode } = useColorMode();
-  const isLight = colorMode === "Light";
+  const isLight = colorMode === "light";
   const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
   return (
