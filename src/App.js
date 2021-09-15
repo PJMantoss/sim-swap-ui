@@ -111,7 +111,7 @@ function App() {
             <Button colorScheme="cyan" size={isNotSmallerScreen ? "md" : "sm"}>Swap</Button>
             
             <Box 
-                mt={5} 
+                mt={isNotSmallerScreen ? "5" : "2"} 
                 py={isNotSmallerScreen ? "8" : "4"} 
                 px={isNotSmallerScreen ? "5" : "2.5"} 
                 bg="#202231" 
