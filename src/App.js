@@ -99,7 +99,15 @@ function App() {
 
           <Spacer></Spacer>
 
-          <Box mt={10} width={isNotSmallerScreen ? "60%" : "98%"} p={5} bg="#161522" borderWidth="1px" borderRadius="md" overflow="hidden">
+          <Box 
+              mt={isNotSmallerScreen ? "10" : "5"} 
+              width={isNotSmallerScreen ? "60%" : "98%"} 
+              p={isNotSmallerScreen ? "5" : "3"} 
+              bg="#161522" 
+              borderWidth="1px" 
+              borderRadius="md" 
+              overflow="hidden"
+          >
             <Button colorScheme="cyan" size="md">Swap</Button>
             
             <Box mt={5} py={8} px={5} bg="#202231" border="none" borderRadius="md">
