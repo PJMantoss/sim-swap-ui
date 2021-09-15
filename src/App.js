@@ -56,7 +56,8 @@ function App() {
         </Link>
 
         <Button 
-            ml={isNotSmallerScreen ? "4" : "0"} 
+            ml={isNotSmallerScreen ? "4" : "0"}
+            mt={isNotSmallerScreen ? "0" : "3"} 
             colorScheme="teal" size="sm"
         >
           Connect to a wallet
