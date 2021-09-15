@@ -171,7 +171,7 @@ function App() {
           <Spacer></Spacer>
 
           <Accordion 
-              mt={5} 
+              mt={isNotSmallerScreen ? "5" : "2"} 
               width="70%"
           >
             <AccordionItem>
