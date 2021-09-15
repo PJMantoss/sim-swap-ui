@@ -172,7 +172,7 @@ function App() {
 
           <Accordion 
               mt={isNotSmallerScreen ? "5" : "3"} 
-              width={isNotSmallerScreen ? "75%" : "96%"}
+              width={isNotSmallerScreen ? "75%" : "98%"}
           >
             <AccordionItem>
               <h2>
