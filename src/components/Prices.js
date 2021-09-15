@@ -53,7 +53,7 @@ const Prices = () => {
                 {coins.map(coin => (
                     <Tr key={coin.id}>
                         <Td>{coin.symbol.toUpperCase()}</Td>
-                        <Td><Image  src={coin.image} style={{width: 25, height: 25, marginRight: 10}}/></Td>
+                        <Td><Image  src={coin.image} style={{width: isNotSmallerScreen ? 25 : 40, height: isNotSmallerScreen ? 25 : 40, marginRight: 10}}/></Td>
                         <Td>
                             <span
                                 className={coin.price_change_percentage_24h > 0 ? (
