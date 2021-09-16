@@ -115,9 +115,8 @@ const PriceChart = props => {
                     value={pair} 
                     onChange={handleSelect} 
                     variant="filled" 
-                    placeholder="Select a pair"
+                    placeholder="Select a Pair"
                     bg="#161522"
-                    color="white"
                 >
                 {currencies.map((cur, idx) => {
                     return(
