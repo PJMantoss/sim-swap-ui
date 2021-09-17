@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Graph from './Graph';
 import { formatData } from '../formatter';
-import { Select, Flex, Box } from "@chakra-ui/react"
+import { Select, Flex } from "@chakra-ui/react"
 
 const PriceChart = props => {
     const [currencies, setCurrencies] = useState([]);
@@ -126,6 +126,8 @@ const PriceChart = props => {
                 })}
                 </Select>
             }
+
+            <Spacer></Spacer>
 
             <Graph data={pastData} price={price} />
         </Flex>
