@@ -108,7 +108,7 @@ const PriceChart = props => {
       }
 
     return (
-        <div>
+        <Flex>
             {
                 <Select 
                     name="currency" 
@@ -128,7 +128,7 @@ const PriceChart = props => {
             }
 
             <Graph data={pastData} price={price} />
-        </div>
+        </Flex>
     );
 };
 
