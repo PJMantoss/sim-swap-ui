@@ -1,6 +1,6 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
-import { Box } from "@chakra-ui/react"
+import { Box, Flex } from "@chakra-ui/react"
 
 const Graph = ({ price, data }) => {
     const opts = {
@@ -17,13 +17,16 @@ const Graph = ({ price, data }) => {
     }
 
     return(
-        <div className="graph">
+        <Flex 
+            flexDirection="column" 
+            alignItems="center"
+        >
             <h2>{`$${price}`}</h2>
 
             <div className="chart-container">
                 <Line data={data} options={opts} />
             </div>
-        </div>
+        </Flex>
     )
 };
 
