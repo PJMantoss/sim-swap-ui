@@ -1,7 +1,7 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
-import { Box, Flex } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 
 const Graph = ({ price, data }) => {
     const opts = {
