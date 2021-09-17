@@ -1,5 +1,6 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
+import { Box } from "@chakra-ui/react"
 
 const Graph = ({ price, data }) => {
     const opts = {
