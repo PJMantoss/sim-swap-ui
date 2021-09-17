@@ -23,9 +23,9 @@ const Graph = ({ price, data }) => {
         >
             <h2>{`$${price}`}</h2>
 
-            <div className="chart-container">
+            <Box className="chart-container">
                 <Line data={data} options={opts} />
-            </div>
+            </Box>
         </Flex>
     )
 };
