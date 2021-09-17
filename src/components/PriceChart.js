@@ -108,7 +108,7 @@ const PriceChart = props => {
       }
 
     return (
-        <Flex>
+        <Flex flexDirection="column">
             {
                 <Select 
                     name="currency" 
