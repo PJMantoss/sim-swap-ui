@@ -111,7 +111,6 @@ const PriceChart = props => {
         <Flex 
             flexDirection="column" 
             alignItems="center"
-            height="50vh"
         >
             {
                 <Select 
