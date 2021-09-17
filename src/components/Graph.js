@@ -17,6 +17,8 @@ const Graph = ({ price, data }) => {
         return <h2>Please select a currency pair</h2>
     }
 
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
+
     return(
         <Flex 
             flexDirection="column" 
