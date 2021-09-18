@@ -26,7 +26,7 @@ const Graph = ({ price, data }) => {
         >
             <h2>{`$${price}`}</h2>
 
-            <Box width={isNotSmallerScreen ? "60%" : "98%"}>
+            <Box width={isNotSmallerScreen ? "60%" : "98%"} height="100%">
                 <Line data={data} options={opts} />
             </Box>
         </Flex>
