@@ -1,7 +1,6 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
-import { useMediaQuery } from "@chakra-ui/react";
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, useMediaQuery } from "@chakra-ui/react";
 
 const Graph = ({ price, data }) => {
     const opts = {
@@ -17,7 +16,7 @@ const Graph = ({ price, data }) => {
         return <h2>Please select a currency pair</h2>
     }
 
-    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
+    //const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
     return(
         <Flex 
