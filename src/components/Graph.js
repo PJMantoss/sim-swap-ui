@@ -23,6 +23,7 @@ const Graph = ({ price, data }) => {
             flexDirection="column" 
             alignItems="center"
             width="100%"
+            height="80vh"
         >
             <h2>{`$${price}`}</h2>
 
