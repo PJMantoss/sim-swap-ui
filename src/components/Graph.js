@@ -3,6 +3,8 @@ import { Line } from 'react-chartjs-2';
 import { Box, Flex, useMediaQuery } from "@chakra-ui/react";
 
 const Graph = ({ price, data }) => {
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
+
     const opts = {
         tooltips: {
             intersect: false,
@@ -16,16 +18,15 @@ const Graph = ({ price, data }) => {
         return <h2>Please select a currency pair</h2>
     }
 
-    //const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
-
     return(
         <Flex 
             flexDirection="column" 
             alignItems="center"
+            width="100%"
         >
             <h2>{`$${price}`}</h2>
 
-            <Box>
+            <Box width={isNotSmallerScreen ? "80%" : "98%"}>
                 <Line data={data} options={opts} />
             </Box>
         </Flex>
