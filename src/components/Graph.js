@@ -23,7 +23,6 @@ const Graph = ({ price, data }) => {
         <Flex 
             flexDirection="column" 
             alignItems="center"
-            width={isNotSmallerScreen ? "80%" : "98%"}
         >
             <h2>{`$${price}`}</h2>
 
