@@ -2,6 +2,7 @@
   "name": "sim-synth-ui",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pjmantoss.github.io/sim-swap-ui",
   "dependencies": {
     "@chakra-ui/icons": "^1.0.15",
     "@chakra-ui/react": "^1.6.7",
