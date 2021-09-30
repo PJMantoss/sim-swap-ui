@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sim-swap-ui/static/css/main.6e9700a2.chunk.css",
+    "main.js": "/sim-swap-ui/static/js/main.6888d07f.chunk.js",
+    "main.js.map": "/sim-swap-ui/static/js/main.6888d07f.chunk.js.map",
+    "runtime-main.js": "/sim-swap-ui/static/js/runtime-main.e5ae8c01.js",
+    "runtime-main.js.map": "/sim-swap-ui/static/js/runtime-main.e5ae8c01.js.map",
+    "static/js/2.57c7bdd8.chunk.js": "/sim-swap-ui/static/js/2.57c7bdd8.chunk.js",
+    "static/js/2.57c7bdd8.chunk.js.map": "/sim-swap-ui/static/js/2.57c7bdd8.chunk.js.map",
+    "static/js/3.331e33e6.chunk.js": "/sim-swap-ui/static/js/3.331e33e6.chunk.js",
+    "static/js/3.331e33e6.chunk.js.map": "/sim-swap-ui/static/js/3.331e33e6.chunk.js.map",
+    "index.html": "/sim-swap-ui/index.html",
+    "static/css/main.6e9700a2.chunk.css.map": "/sim-swap-ui/static/css/main.6e9700a2.chunk.css.map",
+    "static/js/2.57c7bdd8.chunk.js.LICENSE.txt": "/sim-swap-ui/static/js/2.57c7bdd8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e5ae8c01.js",
+    "static/js/2.57c7bdd8.chunk.js",
+    "static/css/main.6e9700a2.chunk.css",
+    "static/js/main.6888d07f.chunk.js"
+  ]
+}
